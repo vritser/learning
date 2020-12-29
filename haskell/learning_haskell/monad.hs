@@ -34,9 +34,8 @@ instance Monad Maybe where
   ma >>= f = case ma of Just a -> f a
                         Nothing -> Nothing
 
-
   env >>= readMaybe :: Maybe Int
-  env >>= readMaybe >>= withPort 
+  env >>= readMaybe >>= withPort
 
   env >>= \e ->
       readMaybe e >>= \p ->
@@ -58,7 +57,7 @@ instance Monad [] where
   [1..3] >>= \ x ->
     [4..6] >>= \ y ->
       [x, y]
-  do 
+  do
     x <- [1..3]
     y <- [4..6]
     [x, y]
@@ -102,7 +101,7 @@ do
   return $ replicate n x
 
 (>>) :: Monad m => m a -> m b -> m b
-ma >> mb = ma >>= \_ -> mb >>= \b -> retrun b
+ma >> mb = ma >>= \_ -> mb >>= \b -> return b
 
 sum $ [1..10] >>= \x -> [x..10] >> [1]
 -- 55
