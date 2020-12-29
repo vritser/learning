@@ -1,0 +1,24 @@
+{
+  "name": "functional-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "applicative.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vritser/functional-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vritser/functional-javascript/issues"
+  },
+  "homepage": "https://github.com/vritser/functional-javascript#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "ramda": "^0.24.1"
+  }
+}
