@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <% if (blogs.length) { %>
+    <ul>
+      <% blogs.forEach(function(blog){ %>
+        <li> <a href='/blog/detail/<%= blog._id %>'><%= blog.title %></a>  --- <%= blog.content %></li>  
+      <% }) %>  
+  </ul>  
+  <% } %>  
+</body>
+</html>

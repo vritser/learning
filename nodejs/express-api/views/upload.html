@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script>
+        $(function(){
+            $('#fileToUpload').change(function () {
+                var formData = new FormData($("#form1")[0]);
+                $.ajax({
+                    url: '/upload',
+                    type: 'POST',
+                    data: formData,
+                    async: false,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (returndata) {
+                        $('#preImg').attr('src', returndata);
+                    },
+                    error: function (returndata) {
+                        console.log(returndata);
+                    }
+                });
+            });
+        })
+        </script>
+</head>
+
+<body>
+    <form method="post" id="form1" enctype="multipart/form-data" action="/upload">
+        <input type="text" name="name">
+        <input type="file" id="fileToUpload" name="upfile">
+        <button type="submit">上传</button>
+    </form>
+    <img id="preImg" width="120" src="/upfile-1469779046252.png" alt="">
+</body>
+
+</html>
