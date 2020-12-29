@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+        function dragenter(e) {
+            e.target.style.border = '1px solid red';
+        }
+        function dragend2(e) {
+            console.log(e.target);
+            e.target.style.border = '1px solid blue';
+        }
+        function dragleave(e) {
+            e.target.style.border = '1px solid #ccc';
+        }
+    </script>
+</head>
+
+<body>
+	<script src="/design.js"></script>
+</body>
+
+</html>

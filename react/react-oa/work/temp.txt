@@ -1,0 +1,46 @@
+{
+    "data": {
+        "formData": {
+            "pmc_business_id": {
+                "value": "$id"
+            },
+            "请假事由": {
+                "value": "$content"
+            },
+            "请假类型": {
+                "value": "$type"
+            },
+            "processCode": {
+                "value": "PROC-FF6Y696SO2-5YEEP0A3RE7UQEVEXO8N1-OM2NSMTI-A1"
+            },
+            "procInstTitle": {
+                "value": "$orgName的请假"
+            },
+            "originatorDeptName": {
+                "value": "$sectorName"
+            },
+            "originatorDeptId": {
+                "value": "$sectorId"
+            },
+            "approval": {
+                "value": "$approval"
+            },
+            "开始时间-结束时间": {
+                "value": "[\"$start\",\"$end\"]"
+            },
+            "请假天数": {
+                "value": "$time"
+            }
+        },
+        "originatorInfo": {
+            "name": "$orgName",
+            "workNo": "$orgId"
+        },
+        "user": {
+            "name": "$approvalName",
+            "workNo": "$approvalId",
+            "orgId": "dinga565c121d1f5dae535c2f4657eb6378f",
+            "personalPhoto": ""
+        }
+    }
+}

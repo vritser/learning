@@ -1,0 +1,108 @@
+{
+    "data": {
+        "titleEn": "",
+        "procType": "",
+        "formData": {
+            "pmc_business_id": {
+                "value": "201610171907000251945",
+                "extendValue": ""
+            },
+            "请假事由": {
+                "value": "有事",
+                "extendValue": ""
+            },
+            "请假类型": {
+                "value": "病假",
+                "extendValue": ""
+            },
+            "processCode": {
+                "value": "PROC-FF6Y696SO2-5YEEP0A3RE7UQEVEXO8N1-OM2NSMTI-A1",
+                "extendValue": ""
+            },
+            "procInstTitle": {
+                "value": "李毅的请假",
+                "extendValue": ""
+            },
+            "originatorDeptName": {
+                "value": "测试",
+                "extendValue": ""
+            },
+            "originatorDeptId": {
+                "value": "18780605",
+                "extendValue": ""
+            },
+            "approval": {
+                "value": "[\"manager3331\"]",
+                "extendValue": ""
+            },
+            "procInstTitleEn": {
+                "value": "",
+                "extendValue": ""
+            },
+            "开始时间-结束时间": {
+                "value": "[\"2016-10-17\",\"2016-10-17\"]",
+                "extendValue": ""
+            },
+            "请假天数": {
+                "value": "1",
+                "extendValue": ""
+            }
+        },
+        "approveInfo": [
+            {
+                "outer": false,
+                "personalPhoto": "",
+                "operatorName": "李毅",
+                "remark": "",
+                "email": "",
+                "action": "submit",
+                "taskId": "",
+                "operator": "06215802543322189",
+                "operateTime": 1476702446000,
+                "files": ""
+            },
+            {
+                "outer": false,
+                "personalPhoto": "",
+                "operatorName": "李松伟",
+                "remark": "",
+                "email": "",
+                "action": "doing",
+                "taskId": "2283432855",
+                "operator": "manager3331",
+                "operateTime": null,
+                "files": ""
+            }
+        ],
+        "originatorInfo": {
+            "name": "李毅",
+            "uid": "",
+            "indirectPhone": "",
+            "isSysAdmin": false,
+            "personalPhoto": "",
+            "email": "",
+            "corpName": "",
+            "labels": [],
+            "workNo": "06215802543322189"
+        },
+        "noticeInfo": [],
+        "procView": "inner",
+        "masterDataUserVo": null,
+        "user": {
+            "name": "李毅",
+            "isSysAdmin": null,
+            "personalPhoto": "",
+            "email": "",
+            "outGroupId": "",
+            "orgId": "dinga565c121d1f5dae535c2f4657eb6378f",
+            "workNo": "06215802543322189"
+        },
+        "formSchema": "{\"title\":\"请假\",\"icon\":\"leave\",\"description\":\"适用于请假审批\",\"items\":[{\"componentName\":\"DDSelectField\",\"props\":{\"label\":\"请假类型\",\"options\":[\"事假\",\"病假\",\"年假\",\"调休\",\"婚假\",\"产假\",\"陪产假\",\"路途假\",\"其他\"],\"required\":true,\"id\":\"请假类型\"}},{\"componentName\":\"DDDateRangeField\",\"props\":{\"placeholder\":\"请选择\",\"format\":\"yyyy-MM-dd\",\"label\":[\"开始时间\",\"结束时间\"],\"required\":true,\"pushToCalendar\":\"1\",\"id\":\"开始时间-结束时间\",\"unit\":\"天\",\"push\":{\"attendanceRule\":1,\"pushTag\":\"请假\",\"pushSwitch\":\"1\"}}},{\"componentName\":\"NumberField\",\"props\":{\"label\":\"请假天数\",\"placeholder\":\"请输入请假天数\",\"required\":true,\"id\":\"请假天数\"}},{\"componentName\":\"TextareaField\",\"props\":{\"label\":\"请假事由\",\"placeholder\":\"请输入请假事由\",\"required\":true,\"id\":\"请假事由\"}},{\"componentName\":\"DDPhotoField\",\"props\":{\"label\":\"图片\",\"id\":\"图片\"}}]}"
+    },
+    "throwable": "",
+    "errorCode": "",
+    "success": true,
+    "errorMessage": "",
+    "metadata": {},
+    "httpStatus": "200"
+}

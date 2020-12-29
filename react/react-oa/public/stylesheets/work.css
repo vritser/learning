@@ -1,0 +1,233 @@
+.approve-head {
+    position: relative;
+    padding: 14px 0;
+    margin: 0 20px;
+    text-align: left;
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+}
+.approve-user-header {
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+}
+.approve-head>img, .approve-user-header {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+    border-radius: 50%;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.approve-head .username {
+    margin-top: 10px;
+    color: #222;
+    font-size: 18px;
+}
+
+.approve-head .status {
+    margin-top: 10px;
+    color: #858e99;
+    font-size: 15px;
+}
+
+/*form schema*/
+.approve-formschema {
+    position: relative;
+    margin: 8px 20px;
+    overflow: hidden;
+}
+.approve-formschema .line {
+    margin: 2px 0;
+    font-size: 14px;
+    overflow: hidden;
+    line-height: 1.3em;
+}
+.approve-formschema .label {
+    color: #858e99;
+    font-size: 14px;
+    margin-right: .5em;
+    line-height: 1.3em;
+    padding: 0;
+    font-weight: 400!important;
+}
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.approve-formschema .line p, .approve-formschema .line span {
+    text-align: justify;
+}
+
+.approve-formschema .component-textareafield .label {
+    float: left;
+}
+
+/*time line*/
+.approval-tline {
+    padding: 0 29px 15px;
+    border-top: 1px solid #DADAD8;
+}
+.time-node {
+    position: relative;
+    overflow: hidden;
+}
+.time-node:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 12px;
+    width: 1px;
+    display: block;
+    background: #e0e0e0;
+}
+.node-status {
+    display: inline-block;
+    border-radius: 50%;
+    background: #F6F5F1;
+    position: absolute;
+    top: 24px;
+    left: 2px;
+    text-align: center;
+}
+.submit .node-status>i.iconfont {
+    color: #75C813;
+}
+.node-status>i.iconfont {
+    color: #ccc;
+}
+.node-status>i.iconfont {
+    font-size: 20px;
+}
+.iconfont {
+    position: relative;
+    top: 0;
+    font-family: iconfont;
+    font-style: normal;
+    line-height: 1;
+    font-size: 14px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.nodebox {
+    margin: 18px 0 0 22px;
+    position: relative;
+}
+.nodebox .arrow {
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    overflow: hidden;
+    top: 8px;
+    left: 1px;
+    z-index: 1;
+}
+.nodebox-inner {
+    position: relative;
+    padding: 14px 14px 14px 64px;
+    margin-left: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+.node-avatar {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+}
+.node-avatar, .nodebox-inner>img {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.nodebox .arrow:after {
+    display: block;
+    width: 16px;
+    height: 16px;
+    -webkit-transform-origin: center;
+    -webkit-transform: rotate(45deg);
+    transform-origin: center;
+    transform: rotate(45deg);
+    top: 0;
+    left: 6px;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+}
+.nodebox .username {
+    color: #222;
+    font-size: 17px;
+}
+.micro-flow-icon-submit:before {
+    content: "\e60e";
+}
+.submit .result-line {
+    color: #75C813;
+}
+.nodebox .result-line {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 7px;
+    display: inline-block;
+    min-height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+}
+
+.nodebox .result-line .reason {
+    color: #858e99;
+}
+
+.nodebox .opreratetime {
+    position: absolute;
+    right: -2px;
+    top: 4px;
+    color: #858e99;
+    font-size: 12px;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+}
+
+
+/*result*/
+.approve-result.pullout {
+    -webkit-transform: translate(0) scale(1);
+    transform: translate(0) scale(1);
+}
+.approve-result.agree {
+    background: url(../images/ok.png) no-repeat;
+    background-size: 100%;
+}
+.approve-result {
+    top: 50px;
+    -webkit-transform: translate(20px,50px) scale(2);
+    transform: translate(20px,50px) scale(2);
+    -webkit-transition: -webkit-transform .15s ease-out,opacity .15s ease-out;
+    transition: transform .15s ease-out,opacity .15s ease-out;
+}
+.alimail-approve-result, .approve-result {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 10px;
+    opacity: 1;
+    z-index: 4;
+}

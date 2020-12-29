@@ -1,0 +1,56 @@
+{
+    "title": "请假",
+    "icon": "",
+    "description": "适用于请假审批",
+    "items": [
+        {
+            "componentName": "SelectField",
+            "props": {
+                "label": "请假类型",
+                "options": [
+                    "事假",
+                    "病假",
+                    "年假",
+                    "调休",
+                    "婚假",
+                    "产假",
+                    "陪产假",
+                    "路途假",
+                    "其他"
+                ],
+                "required": true,
+                "id": "请假类型"
+            }
+        },
+        {
+            "componentName": "TextareaField",
+            "props": {
+                "label": "请假事由",
+                "placeholder": "请输入请假事由",
+                "required": true,
+                "id": "请假事由"
+            }
+        },
+        {
+            "componentName": "DateRangeField",
+            "props": {
+                "label": [
+                    "开始时间",
+                    "结束时间"
+                ],
+                "required": true,
+                "placeholder": "请选择时间",
+                "id": "开始时间-结束时间"
+            }
+        },
+        {
+            "componentName": "NumberField",
+            "props": {
+                "label": "请假天数",
+                "placeholder": "请输入请假天数",
+                "required": true,
+                "id": "请假天数"
+            }
+        }
+    ]
+}

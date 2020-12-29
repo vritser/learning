@@ -1,0 +1,17 @@
+export const SIGN_IN = 'SIGN_IN';
+export const SIGN_UP = 'SIGN_UP';
+
+export const MSG_SEND = 'MSG_SEND';
+export const MSG_RECEIVED = 'MSG_RECEIVED';
+export const MSG_DETAIL = 'MSG_DETAIL';
+export const MSG_CURR = 'MSG_CURR';
+
+
+export const FRIEND_RECEIVED = 'FRIEND_RECEIVED';
+export const SECTOR_RECEIVED = 'SECTOR_RECEIVED';
+export const MEMBERS_RECEIVED = 'MEMBERS_RECEIVED';
+
+export const WORK_PERMISSION_CREATE = 'WORK_PERMISSION_CREATE';
+export const WORK_APPROVER_CHOOSE = 'WORK_APPROVER_CHOOSE';
+export const WORK_SUBMIT = 'WORK_SUBMIT';
+export const WORK_INST_DETAIL = 'WORK_INST_DETAIL';

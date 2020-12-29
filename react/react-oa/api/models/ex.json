@@ -1,0 +1,33 @@
+{
+    "data": {
+        "name": "请假",
+        "content": "{\"title\":\"请假\",\"icon\":\"leave\",\"description\":\"适用于请假审批\",\"items\":[{\"componentName\":\"DDSelectField\",\"props\":{\"label\":\"请假类型\",\"options\":[\"事假\",\"病假\",\"年假\",\"调休\",\"婚假\",\"产假\",\"陪产假\",\"路途假\",\"其他\"],\"required\":true,\"id\":\"请假类型\"}},{\"componentName\":\"DDDateRangeField\",\"props\":{\"placeholder\":\"请选择\",\"format\":\"yyyy-MM-dd\",\"label\":[\"开始时间\",\"结束时间\"],\"required\":true,\"pushToCalendar\":\"1\",\"id\":\"开始时间-结束时间\",\"unit\":\"天\",\"push\":{\"attendanceRule\":1,\"pushTag\":\"请假\",\"pushSwitch\":\"1\"}}},{\"componentName\":\"NumberField\",\"props\":{\"label\":\"请假天数\",\"placeholder\":\"请输入请假天数\",\"required\":true,\"id\":\"请假天数\"}},{\"componentName\":\"TextareaField\",\"props\":{\"label\":\"请假事由\",\"placeholder\":\"请输入请假事由\",\"required\":true,\"id\":\"请假事由\"}},{\"componentName\":\"DDPhotoField\",\"props\":{\"label\":\"图片\",\"id\":\"图片\"}}]}",
+        "pushVo": {
+            "pushSwitch": "",
+            "pushTag": "",
+            "attendanceRule": ""
+        },
+        "memo": "适用于请假审批",
+        "gmtCreated": 1429588739000,
+        "isDeleted": "n",
+        "formEngine": "nfb",
+        "visibleRange": "PUBLIC",
+        "condition": [],
+        "procView": "inner",
+        "masterDataUserVo": null,
+        "previewForm": false,
+        "isAttendanceCorp": "1",
+        "creator": "",
+        "procType": "",
+        "iconUrl": "",
+        "uuid": "FORM-leave-NJJZLP58HL3HBTO2NJ5X1-AV05OQ8I-2",
+        "gmtModified": 1441793248000,
+        "ruleType": ""
+    },
+    "throwable": "",
+    "errorCode": "",
+    "success": true,
+    "errorMessage": "",
+    "metadata": {},
+    "httpStatus": "200"
+}

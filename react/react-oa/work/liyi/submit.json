@@ -1,0 +1,46 @@
+{
+    "data": {
+        "formData": {
+            "pmc_business_id": {
+                "value": "$id"
+            },
+            "请假事由": {
+                "value": "ff"
+            },
+            "请假类型": {
+                "value": "年假"
+            },
+            "processCode": {
+                "value": "PROC-FF6Y696SO2-5YEEP0A3RE7UQEVEXO8N1-OM2NSMTI-A1"
+            },
+            "procInstTitle": {
+                "value": "liyi的请假"
+            },
+            "originatorDeptName": {
+                "value": "[object Object]"
+            },
+            "originatorDeptId": {
+                "value": "[object Object]"
+            },
+            "approval": {
+                "value": "$approval"
+            },
+            "开始时间-结束时间": {
+                "value": "[\"2016-10-21\",\"2016-10-20\"]"
+            },
+            "请假天数": {
+                "value": "2"
+            }
+        },
+        "originatorInfo": {
+            "name": "liyi",
+            "workNo": "undefined"
+        },
+        "user": {
+            "name": "$approvalName",
+            "workNo": "$approvalId",
+            "orgId": "dinga565c121d1f5dae535c2f4657eb6378f",
+            "personalPhoto": ""
+        }
+    }
+}

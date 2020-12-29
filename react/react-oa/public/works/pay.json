@@ -1,0 +1,16 @@
+{
+    "title": "请假",
+    "icon": "",
+    "description": "适用于请假审批",
+    "items": [
+        {
+            "componentName": "TextareaField",
+            "props": {
+                "label": "请假事由",
+                "placeholder": "请输入请假事由",
+                "required": true,
+                "id": "请假事由"
+            }
+        }
+    ]
+}

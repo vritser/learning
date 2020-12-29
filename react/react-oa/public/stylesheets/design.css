@@ -1,0 +1,349 @@
+body {
+    background: #717171 url(../images/bg.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    overflow: hidden;
+}
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  margin: 0px 83px;
+  flex-direction: column;
+  /*justify-content: center;*/
+}
+header
+{
+  display: flex;
+  height: 50px;
+}
+.nav-head {
+    font-size: 22px;
+    color: #fff;
+    align-self: center;
+}
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+}
+
+.HolyGrail-content {
+    flex: 1;
+    width: 200px;
+    position: relative;
+    background: url(../images/iPhone.png) no-repeat top center;
+}
+
+.HolyGrail-ads {
+  /* 两个边栏的宽度设为12em */
+  flex: 0 0 18em;
+  margin-left: 43px;
+}
+
+.HolyGrail-nav {
+  /* 导航放到最左边 */
+  order: -1;
+  width:320px;
+  height: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 100px;
+}
+
+
+/*container*/
+.wf-formcanvas-inner {
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    left: 69px;
+    top: 106px;
+    right: 68px;
+    bottom: 0;
+    max-height: 688px;
+    background: #f0eff4;
+}
+.wf-formcanvas-body {
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.wf-formcanvas-body.empty {
+    background: url(../images/empty.png) no-repeat center;
+    min-height: 300px;
+}
+
+/*item*/
+.wf-widgetsitem {
+    border: 1px dashed rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.1);
+    margin: 0 15px 15px 0;
+    width: 128px;
+    height: 42px;
+    /*float: left;*/
+    font-size: 12px;
+    line-height: 42px;
+    text-align: left;
+    padding-left: 15px;
+    cursor: move;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.wf-widgetsitem * {
+    cursor: move;
+}
+.wf-widgetsitem .widgeticon {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+}
+.widgeticon {
+    background: url(../images/item.png) no-repeat;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+}
+.widgeticon.ddselectfield {
+    background-position: 0 -48px;
+}
+.widgeticon.textfield {
+  background-position: 0 -24px;
+}
+.widgeticon.textareafield {
+  background-position: 0 0;
+}
+.widgeticon.dddatefield {
+  background-position: 0 -72px;
+}
+.widgeticon.dddaterangefield {
+  background-position: 0 -96px;
+}
+.widgeticon.numberfield {
+  background-position: 0 -120px;
+}
+.widgeticon.ddphotofield {
+  background-position: 0 -144px;
+}
+.widgeticon.tablefield {
+  background-position: 0 -168px;
+}
+.widgeticon.ddattachment {
+  background-position: 0 -192px;
+}
+.widgeticon.textnote {
+  background-position: 0 -216px;
+}
+.widgeticon.moneyfield {
+  background-position: 0 -240px;
+}
+.widgeticon.ddmultiselectfield {
+  background-position: 0 -264px;
+}
+
+/*component*/
+.wf-component {
+    margin: 15px 0;
+    overflow: hidden;
+    position: relative;
+}
+.wf-remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    color: #eee;
+    display: none;
+    cursor: pointer;
+    z-index: 10;
+    background: #ff5400;
+    padding: 3px 2px 2px 3px;
+}
+.icon {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-close:before {
+    content: "\e603";
+}
+.wf-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: move;
+    z-index: 9;
+    border: 1px dashed transparent;
+}
+.wf-componentview {
+    position: relative;
+}
+.wf-componentview >.wf-componentview-border {
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #c8c8ca transparent;
+    background: #fff;
+    padding: 15px;
+    white-space: nowrap;
+}
+html:not(.wf-cursor-move) .wf-component.active > .wf-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff5400;
+}
+.wf-componentview >.wf-componentview-border >.wf-componentview-label {
+    display: inline-block;
+    width: 5.5em;
+    padding: 0 8px 0 0;
+    color: #222;
+}
+.wf-componentview .wf-componentview-label {
+    font-size: 16px;
+    color: #858e99;
+    display: block;
+    padding: 10px 15px;
+    white-space: normal;
+    word-break: break-word;
+    vertical-align: top;
+}
+.wf-componentview .wf-componentview-placeholder {
+    color: #ccc;
+    font-size: 15px;
+    vertical-align: top;
+}
+.wf-component-textareafield .wf-componentview-placeholder {
+    height: 50px;
+    display: inline-block;
+}
+
+/*component setting*/
+.wf-settingpanel {
+    width: 320px;
+    right: 83px;
+    top: 140px;
+    bottom: 0;
+}
+
+.wf-panel {
+    position: absolute;
+}
+.wf-panel-tab {
+    height: 32px;
+}
+
+.wf-panel-tab .tabitem.current {
+    position: relative;
+    background: rgba(0,0,0,0.5);
+}
+.wf-panel-tab .tabitem {
+    display: inline-block;
+    width: 99px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+}
+.wf-panel-tab .tabitem.current:after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 4px solid transparent;
+    border-top-color: rgba(0,0,0,0.5);
+    bottom: -8px;
+    margin-left: -4px;
+    left: 50%;
+}
+.wf-panel-tab .tabitem {
+    display: inline-block;
+    width: 99px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+}
+.wf-settingpanel .wf-form {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    overflow-y: auto;
+    left: 0;
+    right: 0;
+    padding: 19px 0;
+}
+.wf-settingpanel .wf-field[class*="wf-setting-"] {
+    color: #fff;
+}
+.wf-field {
+    display: block;
+    margin: 5px 0 30px;
+}
+
+.wf-settingpanel .wf-field .fieldname {
+    color: #fff;
+}
+
+.wf-field .fieldname {
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+    padding-left: 2px;
+}
+
+.wf-field .fieldname span {
+    font-size: 12px;
+}
+
+.wf-settingpanel .wf-field .fieldinfo {
+    color: #f4f4f4;
+}
+.wf-field .fieldname span {
+    font-size: 12px;
+}
+.wf-field .fieldinfo {
+    color: #ccc;
+    font-size: 12px !important;
+    margin-left: 8px;
+    font-weight: normal;
+    opacity: 0.9;
+}
+.wf-field .fieldblock {
+    display: block;
+    margin: 5px 0;
+    line-height: normal;
+}
+.wf-settingpanel input[type="text"], .wf-settingpanel textarea {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.6);
+    color: #fff;
+    padding: 6px 10px;
+    width: 290px;
+    border-radius: 2px;
+    outline: none;
+    font-size: 12px;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+.wf-settingpanel .wf-field[class*="wf-setting-"] {
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}

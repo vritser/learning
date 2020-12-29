@@ -1,0 +1,156 @@
+{
+    "data": {
+        "procType": "",
+        "titleEn": "",
+        "formSchema": "{\"title\":\"请假\",\"icon\":\"leave\",\"description\":\"适用于请假审批\",\"items\":[{\"componentName\":\"DDSelectField\",\"props\":{\"label\":\"请假类型\",\"options\":[\"事假\",\"病假\",\"年假\",\"调休\",\"婚假\",\"产假\",\"陪产假\",\"路途假\",\"其他\"],\"required\":true,\"id\":\"请假类型\"}},{\"componentName\":\"DDDateRangeField\",\"props\":{\"placeholder\":\"请选择\",\"format\":\"yyyy-MM-dd\",\"label\":[\"开始时间\",\"结束时间\"],\"required\":true,\"pushToCalendar\":\"1\",\"id\":\"开始时间-结束时间\",\"unit\":\"天\",\"push\":{\"attendanceRule\":1,\"pushTag\":\"请假\",\"pushSwitch\":\"1\"}}},{\"componentName\":\"NumberField\",\"props\":{\"label\":\"请假天数\",\"placeholder\":\"请输入请假天数\",\"required\":true,\"id\":\"请假天数\"}},{\"componentName\":\"TextareaField\",\"props\":{\"label\":\"请假事由\",\"placeholder\":\"请输入请假事由\",\"required\":true,\"id\":\"请假事由\"}},{\"componentName\":\"DDPhotoField\",\"props\":{\"label\":\"图片\",\"id\":\"图片\"}}]}",
+        "masterDataUserVo": null,
+        "procView": "inner",
+        "formData": {
+            "pmc_business_id": {
+                "value": "201610051624000575415",
+                "extendValue": ""
+            },
+            "请假事由": {
+                "value": "神神叨叨的",
+                "extendValue": ""
+            },
+            "请假类型": {
+                "value": "事假",
+                "extendValue": ""
+            },
+            "processCode": {
+                "value": "PROC-FF6Y696SO2-5YEEP0A3RE7UQEVEXO8N1-OM2NSMTI-A1",
+                "extendValue": ""
+            },
+            "procInstTitle": {
+                "value": "李毅的请假",
+                "extendValue": ""
+            },
+            "originatorDeptName": {
+                "value": "测试",
+                "extendValue": ""
+            },
+            "originatorDeptId": {
+                "value": "18780605",
+                "extendValue": ""
+            },
+            "approval": {
+                "value": "[\"manager3331\"]",
+                "extendValue": ""
+            },
+            "procInstTitleEn": {
+                "value": "",
+                "extendValue": ""
+            },
+            "开始时间-结束时间": {
+                "value": "[\"2016-10-04\",\"2016-10-04\"]",
+                "extendValue": ""
+            },
+            "请假天数": {
+                "value": "1",
+                "extendValue": ""
+            }
+        },
+        "approveInfo": [
+            {
+                "personalPhoto": "",
+                "outer": false,
+                "email": "",
+                "remark": "",
+                "operatorName": "李毅",
+                "operateTime": 1475655898000,
+                "action": "submit",
+                "operator": "06215802543322189",
+                "taskId": "",
+                "files": ""
+            },
+            {
+                "personalPhoto": "",
+                "outer": false,
+                "email": "",
+                "remark": "",
+                "operatorName": "李松伟",
+                "operateTime": 1476020171000,
+                "action": "agree",
+                "operator": "manager3331",
+                "taskId": "2122870387",
+                "files": ""
+            },
+            {
+                "personalPhoto": "",
+                "outer": false,
+                "email": "",
+                "remark": "5555",
+                "operatorName": "李毅",
+                "operateTime": 1476499861000,
+                "action": "添加评论",
+                "operator": "06215802543322189",
+                "taskId": "",
+                "files": "{\"photos\":[],\"attachments\":[]}"
+            },
+            {
+                "personalPhoto": "",
+                "outer": false,
+                "email": "",
+                "remark": "uuuuuuuuu",
+                "operatorName": "李毅",
+                "operateTime": 1476499877000,
+                "action": "添加评论",
+                "operator": "06215802543322189",
+                "taskId": "",
+                "files": "{\"photos\":[],\"attachments\":[]}"
+            },
+            {
+                "personalPhoto": "",
+                "outer": false,
+                "email": "",
+                "remark": "[李松伟](manager3331)kkkkk",
+                "operatorName": "李毅",
+                "operateTime": 1476499898000,
+                "action": "添加评论",
+                "operator": "06215802543322189",
+                "taskId": "",
+                "files": "{\"photos\":[],\"attachments\":[]}"
+            },
+            {
+                "personalPhoto": "",
+                "outer": false,
+                "email": "",
+                "remark": "hhhh",
+                "operatorName": "李松伟",
+                "operateTime": 1476974493000,
+                "action": "添加评论",
+                "operator": "manager3331",
+                "taskId": "",
+                "files": "{\"photos\":[],\"attachments\":[]}"
+            }
+        ],
+        "originatorInfo": {
+            "name": "李毅",
+            "uid": "",
+            "email": "",
+            "indirectPhone": "",
+            "isSysAdmin": false,
+            "workNo": "06215802543322189",
+            "personalPhoto": "",
+            "labels": [],
+            "corpName": ""
+        },
+        "noticeInfo": [],
+        "user": {
+            "name": "李松伟",
+            "email": "",
+            "outGroupId": "",
+            "isSysAdmin": null,
+            "workNo": "manager3331",
+            "orgId": "dinga565c121d1f5dae535c2f4657eb6378f",
+            "personalPhoto": ""
+        }
+    },
+    "throwable": "",
+    "errorCode": "",
+    "success": true,
+    "errorMessage": "",
+    "metadata": {},
+    "httpStatus": "200"
+}
