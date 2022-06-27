@@ -9,7 +9,7 @@ filter _ [] = []
 filter f (x:xs)
   | f x == True  = x : filter f xs
   | otherwise    = filter f xs
-{- 
+{-
   filter f (x:xs) =
     if f x then x : filter f xs
            else filter f xs
@@ -24,24 +24,23 @@ filter (\x -> x `rem` 2 == 0) [0..100]
 giveMeFive :: [a] -> [a]
 giveMeFive xs = map snd $ filter (\(i,x) -> i `rem` 5 == 0) $ zip [0..] xs
 
--- 
 foldl :: (b -> a -> b) -> b -> [a] -> b
-foldl _ acc [] = acc
-foldl f acc (x:xs) = foldl f (f acc x) xs
+foldl _ z [] = z
+foldl f z (x:xs) = foldl f (f z x) xs
 foldl (+) 0 [1..10]
 
 elem :: (Eq a) => a -> [a] -> Bool
-elem y = foldl (\acc x -> if x==y then True else acc) False
+elem y = foldl (\z x -> if x==y then True else z) False
 
 foldr :: (b -> a -> b) -> b -> [a] -> b
-foldr _ acc [] = acc
-foldr f acc (x:xs) = f x (foldr f acc xs)
+foldr _ z [] = z
+foldr f z (x:xs) = f x (foldr f z xs)
 foldr (+) 0 [1..10]
 
 map :: (a -> b) -> [a] -> [b]
 map f = foldr ((:) . f) []
 -- ++ 比 ：效率低
-map f = foldl (\acc x -> acc ++ [f x]) []
+map f = foldl (\z x -> z ++ [f x]) []
 
 flip :: (a -> b -> c) -> b -> a -> c
 flip f y x = f x y
@@ -72,39 +71,39 @@ toEnum . (+1) . fromEnum $ 'a' :: Char
   pro = map (*) [1..]
   -- [(*0),(*1),(*2),(*3)...]
   pro !! 0 $ 5 -- 0
--} 
+-}
 
 maximum :: (Ord a) => [a] -> a
 maximum = foldr1 max
 
 reverse :: [a] -> [a]
 reverse = foldl (flip (:)) []
-reverse = foldr (\x acc -> acc ++ [x]) []
+reverse = foldr (\x z -> z ++ [x]) []
 
 product :: (Num a) => [a] -> a
 product = foldl1 (*)
 product = foldr1 (*)
 
 filter :: (a -> Bool) -> [a] -> [a]
-filter f = foldr (\x acc -> if f x then x : acc else acc) []
+filter f = foldr (\x z -> if f x then x : z else z) []
 
 head :: [a] -> a
 head = foldr1 (\x _ -> x)
-head = foldl1 (\acc _ -> acc)
+head = foldl1 (\z _ -> z)
 
 last :: [a] -> a
 last = foldl1 (\_ x -> x)
-last = foldr1 (\_ acc -> acc)
+last = foldr1 (\_ z -> z)
 
 scanl :: (b -> a -> b) -> b -> [a] -> [b]
-scanl _ acc [] = acc : []
-scanl f acc (x:xs) = (acc : scanl f (f acc x) xs)
+scanl _ z [] = z : []
+scanl f z (x:xs) = (z : scanl f (f z x) xs)
 
 scanr :: (b -> a -> b) -> b -> [a] -> [b]
 scanr _ q0 []           =  [q0]
 scanr f q0 (x:xs)       =  f x q : qs
                            where qs@(q:_) = scanr f q0 xs
--- 
+--
 foldr _ z [] = [z]
 foldr f z (x:xs) = f x (foldr f z xs)
 
